@@ -28,10 +28,13 @@ const About = () => {
 
   return (
     <Container
-      maxWidth={false} // This will make the container take full width
+      maxWidth={true} // This will make the container take full width
       sx={{
         height: "100vh", // Full viewport height
+        width: "100%",
         marginTop: 0, // No space between navbar and container
+        marginLeft:0,
+        marginRight:0,
         background: "linear-gradient(135deg, #1d1b2e, #161421)", // Dark gradient
         color: "#fff", // Default text color
         padding: "40px 20px",
