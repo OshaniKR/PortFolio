@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container, Grid, Avatar, Button } from "@mui/material";
+import { Typography } from "@mui/material";
 import "../theme.css";
 
 const About = () => {
@@ -82,52 +83,38 @@ const About = () => {
 
         {/* Animated Text and Content */}
         <Grid item xs={12} sm={6}>
-          <div>
-            <h4
-              style={{
-                fontSize: "2.5rem",
-                fontWeight: "bold",
-                marginBottom: "20px",
-                lineHeight: "1.2",
-              }}
-            >
-              Hi! I'm{" "}
-              <span
-                className="animated-text"
-                style={{
-                  color: "#ff77e9", // Vibrant text color
-                  display: "inline-block",
-                }}
-              >
-                {displayedText}
-              </span>
-            </h4>
-            <p style={{ fontSize: "1.1rem", opacity: 0.8, lineHeight: "1.8" }}>
-            Hi, I'm Oshani Ranathunga, an undergraduate student at the Faculty of Engineering, University of Ruhuna. 
-    I'm passionate about technology and software development, with a keen interest in programming, web development, and machine learning. 
-    I enjoy working on challenging projects and solving complex problems. When I'm not coding, I love to explore new technologies and 
-    collaborate with like-minded individuals to learn and grow.
-    My goal is to become a skilled software engineer and contribute to the tech community by building innovative solutions.
-            </p>
-            <Button
-              variant="contained"
-              sx={{
-                mt: 3,
-                backgroundColor: "#ff77e9",
-                color: "#fff",
-                padding: "10px 20px",
-                borderRadius: "30px",
-                fontWeight: "bold",
-                textTransform: "none",
-                "&:hover": {
-                  backgroundColor: "#e065cc",
-                },
-              }}
-            >
-              Let's Connect
-            </Button>
-          </div>
-        </Grid>
+  <div>
+    <Typography variant="h4" sx={{ fontWeight: "bold", marginBottom: "20px", lineHeight: "1.2" }}>
+      Hi! I'm{" "}
+      <span className="animated-text" style={{ color: "#ff77e9", display: "inline-block" }}>
+        {displayedText}
+      </span>
+    </Typography>
+    <Typography variant="body1" sx={{ opacity: 0.8, lineHeight: "1.8" }}>
+      Hi, I'm Oshani Ranathunga, an undergraduate student at the Faculty of Engineering, University of Ruhuna. 
+      I'm passionate about technology and software development, with a keen interest in programming, web development, and machine learning. 
+      I enjoy working on challenging projects and solving complex problems. When I'm not coding, I love to explore new technologies and 
+      collaborate with like-minded individuals to learn and grow. My goal is to become a skilled software engineer and contribute to the tech community by building innovative solutions.
+    </Typography>
+    <Button
+      variant="contained"
+      sx={{
+        mt: 3,
+        backgroundColor: "#ff77e9",
+        color: "#fff",
+        padding: "10px 20px",
+        borderRadius: "30px",
+        fontWeight: "bold",
+        textTransform: "none",
+        "&:hover": {
+          backgroundColor: "#e065cc",
+        },
+      }}
+    >
+      Let's Connect
+    </Button>
+  </div>
+</Grid>
       </Grid>
     </Container>
   );
