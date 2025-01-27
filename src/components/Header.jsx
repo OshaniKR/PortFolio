@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import Avatar from "@mui/material/Avatar";
+import { Link } from "react-router-dom"; // Import Link for navigation
 
 const Header = () => {
   return (
@@ -17,18 +18,19 @@ const Header = () => {
 
         {/* Navigation Links */}
         <Box sx={{ display: "flex", gap: 2 }}>
-          <Button color="inherit" href="#about">
-            About
-          </Button>
-          <Button color="inherit" href="#skills">
-            Skills
-          </Button>
-          <Button color="inherit" href="#projects">
-            Projects
-          </Button>
-          <Button color="inherit" href="#contact">
-            Contact
-          </Button>
+          {/* Use Link for React Router navigation */}
+          <Link to="/about" style={{ textDecoration: 'none' }}>
+            <Button color="inherit" sx={{ color: 'white' }}>About</Button>
+          </Link>
+          <Link to="/skills" style={{ textDecoration: 'none' }}>
+            <Button color="inherit" sx={{ color: 'white' }}>Skills</Button>
+          </Link>
+          <Link to="/projects" style={{ textDecoration: 'none' }}>
+            <Button color="inherit" sx={{ color: 'white' }}>Projects</Button>
+          </Link>
+          <Link to="/contact" style={{ textDecoration: 'none' }}>
+            <Button color="inherit" sx={{ color: 'white' }}>Contact</Button>
+          </Link>
         </Box>
 
         {/* Profile Avatar */}
