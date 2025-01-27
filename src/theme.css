@@ -1,0 +1,23 @@
+/* theme.css */
+
+:root {
+  /* Purple Shades */
+  --primary-purple: #6a0dad; /* Main purple shade */
+  --secondary-purple: #8a2be2; /* Secondary purple */
+  --light-purple: #dcd0ff; /* Light purple */
+  --dark-purple: #4b0082; /* Dark purple */
+  --accent-purple: #9b30ff; /* Accent color */
+
+  /* Pink Shades */
+  --primary-pink: #ff69b4; /* Main pink shade */
+  --light-pink: #ffb6c1; /* Light pink */
+  --dark-pink: #c71585; /* Dark pink */
+  --accent-pink: #ff85b3; /* Accent pink */
+
+  /* Background and Text */
+  --background-purple: #f9f5ff; /* Soft background */
+  --background-pink: #fff0f5; /* Light pink background */
+  --text-primary: #2e2e2e; /* Primary text color */
+  --text-secondary: #5e5e5e; /* Secondary text color */
+  --white: #ffffff; /* White color */
+}
