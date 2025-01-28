@@ -9,7 +9,7 @@ function Project() {
     {
       title: "Ayumi E-Learning Platform",
       description: "The Ayumi E-Learning Platform is an ongoing project that provides secure course access, quizzes, video lectures, and a discussion forum.",
-      image: "src/assets/Ayumi.jfif",
+      image: "src/assets/AyumiN.png",
       alt: "Project 1",
       link: "https://github.com/NinaMadu/Ayumi-eLearning",
     },
@@ -21,32 +21,32 @@ function Project() {
       link: "https://github.com/OshaniKR/CryptoCurrency-Price-Prediction",
     },
     {
-      title: "Personal Portfolio",
-      description: "A personal portfolio website showcasing my skills and projects.",
-      image: "/path-to-image/project3.jpg",
+      title: "MERN Social Media Application",
+      description: "A MERN-based social media app offering posts, comments, likes, secure authentication, user profiles, and community engagement features.",
+      image: "src/assets/mern.jfif",
       alt: "Project 3",
-      link: "/project3",
+      link: "https://github.com/OshaniKR/mernsocial",
     },
     {
-      title: "Weather App",
-      description: "A weather forecasting app with real-time updates.",
-      image: "/path-to-image/project4.jpg",
+      title: "Social Media Mobile Application for pet lovers",
+      description: "A mobile social media app for pet lovers to share posts, connect with others, explore communities, and celebrate pets together.",
+      image: "src/assets/PetLovers.jfif",
       alt: "Project 4",
-      link: "/project4",
+      link: "https://github.com/OshaniKR/Mobile-SocialApp",
     },
     {
-      title: "Chat Application",
-      description: "A real-time messaging application with features like group chats and file sharing.",
-      image: "/path-to-image/project5.jpg",
+      title: "Waste Management System- MySQL",
+      description: "A Waste Management System powered by MySQL for efficient tracking, scheduling, and management of waste collection and disposal processes.",
+      image: "src/assets/Waste.jfif",
       alt: "Project 5",
-      link: "/project5",
+      link: "https://github.com/OshaniKR/Waste-Management-System-MySQL",
     },
     {
-      title: "Task Manager",
-      description: "A task management app to organize and track tasks efficiently.",
-      image: "/path-to-image/project6.jpg",
+      title: "Waste Management System - Data Structures and Algorithms",
+      description: "A Waste Management System uses data structures and algorithms for efficient waste collection, segregation, and disposal.",
+      image: "src/assets/WasteDataStructures.jfif",
       alt: "Project 6",
-      link: "/project6",
+      link: "https://github.com/OshaniKR/WasteManagement",
     },
   ]);
 
@@ -91,7 +91,7 @@ function Project() {
     marginTop: "40px",
     marginBottom: "20px",
     textAlign: "center",
-    background: "linear-gradient(135deg,rgb(213, 105, 193),rgb(80, 63, 153))", // Gradient background with theme colors
+    background: "linear-gradient(135deg,rgb(232, 209, 228),rgb(80, 63, 153))", // Gradient background with theme colors
     WebkitBackgroundClip: "text", // Make the background apply only to the text
     color: "transparent", // Make text color transparent to see the gradient
     fontWeight: "bold", // Bold font
