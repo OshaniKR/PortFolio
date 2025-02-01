@@ -128,7 +128,7 @@ const About = () => {
               {/* Social Icons */}
               <Box sx={{ marginLeft: "auto", display: "flex", gap: 1 }}>
                 <IconButton
-                  href="https://github.com/oshani-ranathunga"
+                  href="https://github.com/OshaniKR"
                   target="_blank"
                   sx={{
                     color: "#ff77e9",

@@ -64,7 +64,7 @@ function Contact() {
     <Container
       maxWidth={false}
       sx={{
-        height: "100vh",
+        height: "auto",
         width: "100%",
         marginTop: 0,
         background: "linear-gradient(135deg, #1d1b2e, #161421)",

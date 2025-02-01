@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Typography, Grid, Chip, Tooltip, Button } from "@mui/material";
+import { Container, Typography, Grid, Box, Button, Chip, Tooltip } from "@mui/material";
 import {
   FaJs,
   FaReact,
@@ -7,7 +7,6 @@ import {
   FaPython,
   FaDatabase,
   FaJava,
-  FaCertificate,
 } from "react-icons/fa";
 import { SiFlutter, SiMysql, SiCplusplus, SiDart } from "react-icons/si";
 
@@ -65,20 +64,59 @@ function Skills() {
     },
   ];
 
+  const competitions = [
+    {
+      title: "Hackathon Winner",
+      description: "Participated and won the first prize at a university-level hackathon.",
+      image: "https://example.com/hackathon-image.jpg", // Add your image URL here
+    },
+    {
+      title: "Coding Challenge Runner-Up",
+      description: "Placed second in a national-level coding challenge.",
+      image: "https://example.com/coding-challenge-image.jpg", // Add your second competition image URL here
+    },
+  ];
+  
+  const clubMembers = [
+    {
+      title: "Club President",
+      description: "Led the university’s software development club and organized workshops.",
+      image: "https://example.com/club-president-image.jpg", // Add your club president image URL here
+    },
+    {
+      title: "Club Vice President",
+      description: "Assisted in managing club activities and organizing events.",
+      image: "https://example.com/club-vp-image.jpg", // Add another club member image URL here
+    },
+  ];
+  
+  const volunteering = [
+    {
+      title: "Volunteer Teacher",
+      description: "Taught programming basics to local high school students as part of a volunteering program.",
+      image: "https://example.com/volunteering-image.jpg", // Add your volunteering image URL here
+    },
+    {
+      title: "Mehewara Volunteer",
+      description: "Contributed as a volunteer at the Mehewara social outreach program.",
+      image: "https://example.com/mehewara-image.jpg", // Add your Mehewara volunteering image URL here
+    },
+  ];
+  
   return (
     <Container
-      maxWidth={true}
-      sx={{
-        height: "100vh",
-        width: "100%",
-        marginTop: 0,
-        background: "linear-gradient(135deg, #1d1b2e, #161421)",
-        color: "#fff",
-        padding: "40px 20px",
-        position: "relative",
-        overflow: "hidden",
-      }}
-    >
+          maxWidth={false}
+          sx={{
+            height: "auto",
+            width: "100%",
+            marginTop: 0,
+            background: "linear-gradient(135deg, #1d1b2e, #161421)",
+            color: "#fff",
+            padding: "40px 20px",
+            position: "relative",
+            overflow: "hidden",
+          }}
+        >
       <div
         style={{
           position: "absolute",
@@ -90,6 +128,7 @@ function Skills() {
           filter: "blur(70px)",
         }}
       />
+
       {/* Page Title */}
       <Typography
         variant="h4"
@@ -109,9 +148,10 @@ function Skills() {
           },
         }}
       >
-        Skills
+        Skills & Achievements
       </Typography>
 
+      {/* Skills Section */}
       <Grid container spacing={3} justifyContent="center">
         {skills.map((skill, index) => (
           <Grid item key={index}>
@@ -167,6 +207,140 @@ function Skills() {
           </Grid>
         ))}
       </Grid>
+
+      {/* Extracurricular Activities Section */}
+      <Box sx={{ marginTop: "40px" }}>
+        <Typography
+          variant="h5"
+          sx={{
+            textAlign: "center",
+            background: "linear-gradient(135deg, rgb(232, 209, 228), rgb(80, 63, 153))",
+            WebkitBackgroundClip: "text",
+            color: "transparent",
+            fontWeight: "bold",
+            fontSize: "2rem",
+            textShadow: "2px 2px 5px rgba(255, 255, 255, 0.4)",
+            marginBottom: "20px",
+          }}
+        >
+          Competitions
+        </Typography>
+        <Grid container spacing={3} justifyContent="center">
+  {competitions.map((activity, index) => (
+    <Grid item key={index}>
+      <Box
+        sx={{
+          border: "1px solid #fff",
+          padding: "20px",
+          borderRadius: "8px",
+          background: "rgba(0, 0, 0, 0.6)",
+          textAlign: "center",
+          color: "#fff",
+          boxShadow: "0 4px 10px rgba(0, 0, 0, 0.5)",
+        }}
+      >
+        <img
+          src={activity.image}
+          alt={activity.title}
+          style={{ width: "100%", height: "auto", borderRadius: "8px", marginBottom: "10px" }}
+        />
+        <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+          {activity.title}
+        </Typography>
+        <Typography variant="body2">{activity.description}</Typography>
+      </Box>
+    </Grid>
+  ))}
+</Grid>
+
+        <Typography
+          variant="h5"
+          sx={{
+            textAlign: "center",
+            background: "linear-gradient(135deg, rgb(232, 209, 228), rgb(80, 63, 153))",
+            WebkitBackgroundClip: "text",
+            color: "transparent",
+            fontWeight: "bold",
+            fontSize: "2rem",
+            textShadow: "2px 2px 5px rgba(255, 255, 255, 0.4)",
+            marginTop: "40px",
+            marginBottom: "20px",
+          }}
+        >
+          Club Members
+        </Typography>
+        <Grid container spacing={3} justifyContent="center">
+  {clubMembers.map((activity, index) => (
+    <Grid item key={index}>
+      <Box
+        sx={{
+          border: "1px solid #fff",
+          padding: "20px",
+          borderRadius: "8px",
+          background: "rgba(0, 0, 0, 0.6)",
+          textAlign: "center",
+          color: "#fff",
+          boxShadow: "0 4px 10px rgba(0, 0, 0, 0.5)",
+        }}
+      >
+        <img
+          src={activity.image}
+          alt={activity.title}
+          style={{ width: "100%", height: "auto", borderRadius: "8px", marginBottom: "10px" }}
+        />
+        <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+          {activity.title}
+        </Typography>
+        <Typography variant="body2">{activity.description}</Typography>
+      </Box>
+    </Grid>
+  ))}
+</Grid>
+
+        <Typography
+          variant="h5"
+          sx={{
+            textAlign: "center",
+            background: "linear-gradient(135deg, rgb(232, 209, 228), rgb(80, 63, 153))",
+            WebkitBackgroundClip: "text",
+            color: "transparent",
+            fontWeight: "bold",
+            fontSize: "2rem",
+            textShadow: "2px 2px 5px rgba(255, 255, 255, 0.4)",
+            marginTop: "40px",
+            marginBottom: "20px",
+          }}
+        >
+          Volunteering
+        </Typography>
+        <Grid container spacing={3} justifyContent="center">
+  {volunteering.map((activity, index) => (
+    <Grid item key={index}>
+      <Box
+        sx={{
+          border: "1px solid #fff",
+          padding: "20px",
+          borderRadius: "8px",
+          background: "rgba(0, 0, 0, 0.6)",
+          textAlign: "center",
+          color: "#fff",
+          boxShadow: "0 4px 10px rgba(0, 0, 0, 0.5)",
+        }}
+      >
+        <img
+          src={activity.image}
+          alt={activity.title}
+          style={{ width: "100%", height: "auto", borderRadius: "8px", marginBottom: "10px" }}
+        />
+        <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+          {activity.title}
+        </Typography>
+        <Typography variant="body2">{activity.description}</Typography>
+      </Box>
+    </Grid>
+  ))}
+</Grid>
+      </Box>
     </Container>
   );
 }
