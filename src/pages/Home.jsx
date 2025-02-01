@@ -5,30 +5,37 @@ import Skills from './Skills';
 import Project from './Project';
 import Contact from './Contact';
 
+
 function Home() {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       {/* Add the Header component */}
       <Header />
 
-      {/* Wrapper to apply consistent width */}
-      <div
-        style={{
-           // Limit the width for consistent alignment
-          margin: '0 auto', // Center the content
-           // Adjust this based on the header height
-        }}
-      >
-        <section id="about" style={{ width: '100%' }}>
+      {/* Wrapper to apply consistent width and make it responsive */}
+      <div className="flex-grow mx-auto px-4">
+        <section
+          id="about"
+          className="w-full mb-8 flex justify-center items-center"
+        >
           <About />
         </section>
-        <section id="skills" style={{ width: '100%' }}>
+        <section
+          id="skills"
+          className="w-full mb-8 flex justify-center items-center"
+        >
           <Skills />
         </section>
-        <section id="projects" style={{ width: '100%' }}>
+        <section
+          id="projects"
+          className="w-full mb-8 flex justify-center items-center"
+        >
           <Project />
         </section>
-        <section id="contact" style={{ width: '100%' }}>
+        <section
+          id="contact"
+          className="w-full mb-8 flex justify-center items-center"
+        >
           <Contact />
         </section>
       </div>

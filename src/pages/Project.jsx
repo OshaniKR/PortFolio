@@ -102,20 +102,21 @@ function Project() {
     marginTop: "40px",
     marginBottom: "20px",
     textAlign: "center",
-    background: "linear-gradient(135deg,rgb(232, 209, 228),rgb(80, 63, 153))", // Gradient background with theme colors
-    WebkitBackgroundClip: "text", // Make the background apply only to the text
-    color: "transparent", // Make text color transparent to see the gradient
-    fontWeight: "bold", // Bold font
-    fontSize: "2.5rem", // Larger font size
-    textShadow: "2px 2px 5px rgba(255, 255, 255, 0.4)", // Subtle text shadow
-    transition: "transform 0.3s ease-in-out", // Add smooth transition on hover
+    background: "linear-gradient(135deg, var(--primary-purple), var(--primary-pink))", // Smooth purple-pink blend
+    WebkitBackgroundClip: "text",
+    color: "transparent",
+    fontWeight: "bold",
+    fontSize: "2.5rem",
+    textShadow: "2px 2px 5px rgba(155, 48, 255, 0.4)", // Subtle purple-pink glow
+    transition: "transform 0.3s ease-in-out",
     "&:hover": {
-      transform: "scale(1.1)", // Slightly enlarge the text on hover for effect
+      transform: "scale(1.1)",
     },
   }}
 >
   My Projects
 </Typography>
+
 
       
 
