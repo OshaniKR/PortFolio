@@ -84,6 +84,17 @@ function Project() {
         overflow: "hidden",
       }}
     >
+      <div
+        style={{
+          position: "absolute",
+          bottom: "10%",
+          left: "5%",
+          width: "150px",
+          height: "150px",
+          background: "radial-gradient(circle, #ff77e9, transparent)",
+          filter: "blur(70px)",
+        }}
+      />
       {/* Page Title */}
       <Typography
   variant="h4"
