@@ -50,7 +50,7 @@ const About = () => {
         <Grid item xs={12} sm={6} display="flex" justifyContent="center">
           <Avatar
             alt="Profile"
-            src="src/assets/Oshani_23.jpg"
+            src="/assets/Oshani_23.jpg"
             sx={{
               width: { xs: 250, sm: 350, md: 450 },
               height: { xs: 250, sm: 350, md: 450 },

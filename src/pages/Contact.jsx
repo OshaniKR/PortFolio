@@ -235,7 +235,7 @@ function Contact() {
   style={{
     width: "50%",
     height: "100vh", // Ensure the background image covers the full height
-    backgroundImage: "url('src/assets/download.jfif')",
+    backgroundImage: "url(assets/download.jfif')",
     backgroundSize: "cover", // Cover the entire div
     backgroundPosition: "center", // Center the image
   }}
