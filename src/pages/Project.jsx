@@ -51,23 +51,20 @@ function Project() {
   ]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const itemsPerPage = 3; // Number of cards to display at a time
+  const itemsPerPage = 3;
 
-  // Function to move forward
   const goForward = () => {
     if (currentIndex + itemsPerPage < projects.length) {
       setCurrentIndex(currentIndex + itemsPerPage);
     }
   };
 
-  // Function to move backward
   const goBackward = () => {
     if (currentIndex - itemsPerPage >= 0) {
       setCurrentIndex(currentIndex - itemsPerPage);
     }
   };
 
-  // Slice the projects array to display only the current set of cards
   const visibleProjects = projects.slice(currentIndex, currentIndex + itemsPerPage);
 
   return (
@@ -84,10 +81,10 @@ function Project() {
         overflow: "hidden",
       }}
     >
-      <div
+       <div
         style={{
           position: "absolute",
-          bottom: "10%",
+          top: "10%",
           left: "5%",
           width: "150px",
           height: "150px",
@@ -95,32 +92,32 @@ function Project() {
           filter: "blur(70px)",
         }}
       />
-      {/* Page Title */}
       <Typography
-  variant="h4"
-  sx={{
-    marginTop: "40px",
-    marginBottom: "20px",
-    textAlign: "center",
-    background: "linear-gradient(135deg, var(--primary-purple), var(--primary-pink))", // Smooth purple-pink blend
-    WebkitBackgroundClip: "text",
-    color: "transparent",
-    fontWeight: "bold",
-    fontSize: "2.5rem",
-    textShadow: "2px 2px 5px rgba(155, 48, 255, 0.4)", // Subtle purple-pink glow
-    transition: "transform 0.3s ease-in-out",
-    "&:hover": {
-      transform: "scale(1.1)",
-    },
-  }}
->
-  My Projects
-</Typography>
+        variant="h4"
+        sx={{
+          marginTop: "40px",
+          marginBottom: "20px",
+          textAlign: "center",
+          background: "linear-gradient(135deg, var(--primary-purple), var(--primary-pink))",
+          WebkitBackgroundClip: "text",
+          color: "transparent",
+          fontWeight: "bold",
+          fontSize: "2.5rem",
+          textShadow: "2px 2px 5px rgba(155, 48, 255, 0.4)",
+          transition: "transform 0.3s ease-in-out",
+          "&:hover": {
+            transform: "scale(1.1)",
+          },
+        }}
+      >
+        My Projects
+      </Typography>
 
+      <Typography variant="body1" sx={{ textAlign: "center", marginBottom: "20px", maxWidth: "800px", margin: "0 auto" }}>
+        Explore my projects, where I bring ideas to life through technology! From AI and Machine Learning to Web Development and Software Engineering, 
+        each project reflects my passion for problem-solving and innovation. Dive in to see how I build solutions that make an impact.
+      </Typography>
 
-      
-
-      {/* Navigation Buttons */}
       <Grid container justifyContent="space-between" sx={{ marginBottom: "20px" }}>
         <Grid item>
           <IconButton onClick={goBackward} disabled={currentIndex === 0}>
@@ -134,40 +131,18 @@ function Project() {
         </Grid>
       </Grid>
 
-      {/* Projects Grid */}
       <Grid container spacing={4} justifyContent="center">
         {visibleProjects.map((project, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
             <Card
-              sx={{
-                backgroundColor: "#2d2a4a",
-                color: "#fff",
-                borderRadius: "10px",
-                boxShadow: "0 4px 6px rgba(0,0,0,0.2)",
-                height: "425px",
-                width: "100%",
-              }}
+              sx={{ backgroundColor: "#2d2a4a", color: "#fff", borderRadius: "10px", boxShadow: "0 4px 6px rgba(0,0,0,0.2)", height: "425px", width: "100%" }}
             >
-              <CardMedia
-                component="img"
-                height="250"
-                image={project.image}
-                alt={project.alt}
-              />
+              <CardMedia component="img" height="250" image={project.image} alt={project.alt} />
               <CardContent>
-                <Typography variant="h6" sx={{ fontWeight: "bold" }}>
-                  {project.title}
-                </Typography>
-                <Typography variant="body2" sx={{ marginBottom: "10px" }}>
-                  {project.description}
-                </Typography>
-                <IconButton
-                sx={{ color: "#fff" }}
-                href={project.link} // Assuming you have a GitHub link in your project data
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <GitHubIcon />
+                <Typography variant="h6" sx={{ fontWeight: "bold" }}>{project.title}</Typography>
+                <Typography variant="body2" sx={{ marginBottom: "10px", fontSize: "0.9rem", color: "#ddd" }}>{project.description}</Typography>
+                <IconButton sx={{ color: "#fff" }} href={project.link} target="_blank" rel="noopener noreferrer">
+                  <GitHubIcon />
                 </IconButton>
               </CardContent>
             </Card>

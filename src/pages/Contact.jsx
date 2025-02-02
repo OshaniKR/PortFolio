@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, Typography, TextField, Button, Box } from "@mui/material";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com"; // Import EmailJS SDK
+import Footer from "./Footer";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -244,7 +245,7 @@ function Contact() {
 </div>
 
 
-
+<Footer/>
     </Container>
   );
 }

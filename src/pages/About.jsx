@@ -97,10 +97,9 @@ const About = () => {
                 padding: { xs: "0 10px", sm: "0" }, // Add padding for smaller screens
               }}
             >
-              Hi, I'm Oshani Ranathunga, an undergraduate student at the Faculty of Engineering, University of Ruhuna. 
-              I'm passionate about technology and software development, with a keen interest in programming, web development, and machine learning. 
-              I enjoy working on challenging projects and solving complex problems. When I'm not coding, I love to explore new technologies and 
-              collaborate with like-minded individuals to learn and grow. My goal is to become a skilled software engineer and contribute to the tech community by building innovative solutions.
+              Hi, I'm Oshani Ranathunga, an undergraduate student at the Faculty of Engineering, University of Ruhuna. I have a deep interest in Networking, Digital Electronics, Machine Learning, Artificial Intelligence, Data Science, and Web Development. I enjoy exploring how these fields intersect and contribute to technological advancements. My curiosity drives me to work on challenging projects, analyze complex problems, and continuously expand my knowledge. Beyond academics, I love discovering new technologies and collaborating with like-minded individuals to learn and grow. My goal is to become a skilled engineer and contribute to these domains by building innovative and impactful solutions.
+
+
             </Typography>
 
             {/* CV Button and Social Icons */}
