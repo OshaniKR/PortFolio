@@ -60,7 +60,7 @@ const Header = () => {
         {/* Profile Avatar */}
         <Avatar
           alt="Profile Picture"
-          src="/src/assets/Oshani_23.jpg" // Add your image URL here
+          src="assets/Oshani_23.jpg" // Add your image URL here
           sx={{ width: 40, height: 40, ml: 2 }} // Using sx for styling (margin-left of 2)
         />
       </Toolbar>
