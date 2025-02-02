@@ -34,7 +34,7 @@ function Footer() {
               <GitHubIcon /> GitHub
             </Link>
             <Link
-              href="https://www.linkedin.com/in/your-profile"
+              href="https://www.linkedin.com/in/oshani-ranathunga"
               target="_blank"
               rel="noopener noreferrer"
               sx={{ color: '#fff', display: 'flex', alignItems: 'center',justifyContent: 'center', gap: '5px' }}

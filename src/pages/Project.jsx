@@ -6,13 +6,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 function Project() {
   const [projects, setProjects] = useState([
-    {
-      title: "Ayumi E-Learning Platform",
-      description: "The Ayumi E-Learning Platform is an ongoing project that provides secure course access, quizzes, video lectures, and a discussion forum.",
-      image: "src/assets/AyumiN.png",
-      alt: "Project 1",
-      link: "https://github.com/NinaMadu/Ayumi-eLearning",
-    },
+   
     {
       title: "Machine Learning",
       description: "A machine learning model predicting cryptocurrency prices using historical data and advanced algorithms to forecast market trends and assist traders.",
@@ -28,6 +22,13 @@ function Project() {
       link: "https://github.com/OshaniKR/mernsocial",
     },
     {
+      title: "Waste Management System- MySQL",
+      description: "A Waste Management System powered by MySQL for efficient tracking, scheduling, and management of waste collection and disposal processes.",
+      image: "src/assets/Waste.jfif",
+      alt: "Project 5",
+      link: "https://github.com/OshaniKR/Waste-Management-System-MySQL",
+    },
+    {
       title: "Social Media Mobile Application for pet lovers",
       description: "A mobile social media app for pet lovers to share posts, connect with others, explore communities, and celebrate pets together.",
       image: "src/assets/PetLovers.jfif",
@@ -35,12 +36,13 @@ function Project() {
       link: "https://github.com/OshaniKR/Mobile-SocialApp",
     },
     {
-      title: "Waste Management System- MySQL",
-      description: "A Waste Management System powered by MySQL for efficient tracking, scheduling, and management of waste collection and disposal processes.",
-      image: "src/assets/Waste.jfif",
-      alt: "Project 5",
-      link: "https://github.com/OshaniKR/Waste-Management-System-MySQL",
+      title: "Ayumi E-Learning Platform",
+      description: "The Ayumi E-Learning Platform is an ongoing project that provides secure course access, quizzes, video lectures, and a discussion forum.",
+      image: "src/assets/AyumiN.png",
+      alt: "Project 1",
+      link: "https://github.com/NinaMadu/Ayumi-eLearning",
     },
+    
     {
       title: "Waste Management System - Data Structures and Algorithms",
       description: "A Waste Management System uses data structures and algorithms for efficient waste collection, segregation, and disposal.",
