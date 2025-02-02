@@ -1,7 +1,8 @@
 import React from "react";
 import { Container, Typography, Grid, Box, Chip, List, ListItem, ListItemText } from "@mui/material";
 import { FaJs, FaReact, FaPython, FaDatabase, FaJava, FaDocker } from "react-icons/fa";
-import { SiFlutter, SiMysql, SiCplusplus, SiDart } from "react-icons/si";
+import { SiFlutter, SiMysql, SiCplusplus, SiDart, SiProteus } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
 
 function Skills() {
   const skills = [
@@ -15,6 +16,10 @@ function Skills() {
     { icon: <SiFlutter size={80} color="#02569b" /> },
     { icon: <SiDart size={80} color="#00B4B6" /> },
     { icon: <SiCplusplus size={80} color="#00599c" /> },
+    { icon: <RiTailwindCssFill size={80} color="#00599c" /> },
+    { icon: <SiProteus size={80} color="#00599c" /> },
+
+    
   ];
   const certifications = [
     { title: "Supervised Machine Learning: Regression and Classification", link: "https://drive.google.com/file/d/1PMuyRzNSgmcx11InjNGopiD4MBweNoRE/view?usp=drive_link", institute: "DeepLearning.AI, Coursera" },
@@ -31,15 +36,32 @@ function Skills() {
   
 
   const competitions = [
-    { title: "Hackathon Winner", description: "Participated and won the first prize at a university-level hackathon." },
-    { title: "Code Challenge Finalist", description: "Secured a spot in the finals of a national-level coding competition." },
+    { 
+    title: "Top 10 Finalists at Hackaholics 6.0", 
+    description: "Team LOGICLOOM has been selected as one of the Top 10 Finalists at Hackaholics 6.0! organized by UCS WIE, UCSC IEEE." 
+  },
+  { 
+    title: "Red Cypher Participation", 
+    description: "Participated in Red Cyber organized by the University of Ruhuna." 
+  }
   ];
 
   const clubMembers = [
-    { title: "Club President", description: "Led the university’s software development club and organized workshops." },
-    { title: "Event Coordinator", description: "Organized coding workshops and hackathons within the club." },
+    
+    { 
+      title: "PR Team Member at Haxtream 3.0", 
+      description: "Part of the PR team for Haxtream 3.0." 
+    },
+    { 
+      title: "Secretary Team Member at Career and Internship Fair 2025", 
+      description: "Served as a Secretary team member for the Career and Internship Fair 2025." 
+    },
+    { 
+      title: "Volunteering at Mehewara", 
+      description: "Volunteered for Mehewara, an event conducted by the University of Ruhuna." 
+    }
   ];
-
+  
   
 
   return (
@@ -108,6 +130,7 @@ function Skills() {
       background: "rgba(0, 0, 0, 0.6)",
       color: "#fff",
       boxShadow: "0 4px 10px rgba(0, 0, 0, 0.5)",
+      height: "400px"
     }}
   >
     {/* Centered Title */}
@@ -154,62 +177,94 @@ function Skills() {
 
 
           {/* Competitions */}
-          <Grid item xs={12} sm={4}>
-            <Box
-              sx={{
-                border: "1px solid #fff",
-                padding: "20px",
-                borderRadius: "8px",
-                background: "rgba(0, 0, 0, 0.6)",
-                textAlign: "center",
-                color: "#fff",
-                boxShadow: "0 4px 10px rgba(0, 0, 0, 0.5)",
-              }}
-            >
-              <Typography variant="h6" sx={{ fontWeight: "bold" }}>
-                Competitions
+<Grid item xs={12} sm={4}>
+  <Box
+    sx={{
+      border: "1px solid #fff",
+      padding: "20px",
+      borderRadius: "8px",
+      background: "rgba(0, 0, 0, 0.6)",
+      textAlign: "center",
+      color: "#fff",
+      boxShadow: "0 4px 10px rgba(0, 0, 0, 0.5)",
+      height: "400px"
+    }}
+  >
+    <Typography
+      variant="h6"
+      sx={{
+        fontWeight: "bold",
+        color: "#fff", // Light blue color
+      }}
+    >
+      Competitions
+    </Typography>
+    <List>
+      {competitions.map((activity, index) => (
+        <ListItem key={index}>
+          <ListItemText
+            primary={
+              <Typography sx={{ color: "#61dafb" }}>
+                {activity.title}
               </Typography>
-              <List>
-                {competitions.map((activity, index) => (
-                  <ListItem key={index}>
-                    <ListItemText
-                      primary={activity.title}
-                      secondary={activity.description}
-                    />
-                  </ListItem>
-                ))}
-              </List>
-            </Box>
-          </Grid>
+            }
+            secondary={
+              <Typography sx={{ color: "#fff" }}>
+                {activity.description}
+              </Typography>
+            }
+          />
+        </ListItem>
+      ))}
+    </List>
+  </Box>
+</Grid>
+
 
           {/* Clubs */}
-          <Grid item xs={12} sm={4}>
-            <Box
-              sx={{
-                border: "1px solid #fff",
-                padding: "20px",
-                borderRadius: "8px",
-                background: "rgba(0, 0, 0, 0.6)",
-                textAlign: "center",
-                color: "#fff",
-                boxShadow: "0 4px 10px rgba(0, 0, 0, 0.5)",
-              }}
-            >
-              <Typography variant="h6" sx={{ fontWeight: "bold" }}>
-                Clubs & Extracurriculars
+<Grid item xs={12} sm={4}>
+  <Box
+    sx={{
+      border: "1px solid #fff",
+      padding: "20px",
+      borderRadius: "8px",
+      background: "rgba(0, 0, 0, 0.6)",
+      textAlign: "center",
+      color: "#fff",
+      boxShadow: "0 4px 10px rgba(0, 0, 0, 0.5)",
+      height: "400px"
+    }}
+  >
+    <Typography
+      variant="h6"
+      sx={{
+        fontWeight: "bold",
+        color: "#fff", // Light blue color
+      }}
+    >
+    Extracurriculars
+    </Typography>
+    <List>
+      {clubMembers.map((activity, index) => (
+        <ListItem key={index}>
+          <ListItemText
+            primary={
+              <Typography sx={{ color: "#61dafb" }}>
+                {activity.title}
               </Typography>
-              <List>
-                {clubMembers.map((activity, index) => (
-                  <ListItem key={index}>
-                    <ListItemText
-                      primary={activity.title}
-                      secondary={activity.description}
-                    />
-                  </ListItem>
-                ))}
-              </List>
-            </Box>
-          </Grid>
+            }
+            secondary={
+              <Typography sx={{ color: "#fff" }}>
+                {activity.description}
+              </Typography>
+            }
+          />
+        </ListItem>
+      ))}
+    </List>
+  </Box>
+</Grid>
+
         </Grid>
       </Box>
     </Container>

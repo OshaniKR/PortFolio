@@ -52,9 +52,7 @@ function Footer() {
           <Typography variant="body2">
             B.Sc. Computer Engineering Undergraduate, University of Ruhuna, Faculty of Engineering (2022–present)
           </Typography>
-          <Typography variant="body2">
-            Matara Central College (2007–2020)
-          </Typography>
+          
         </Box>
 
         {/* About Section */}
